@@ -1,0 +1,20 @@
+{
+  "name": "Lumen",
+  "version": "1.0.0",
+  "description": "Lumen & Vue",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "keywords": [],
+  "author": "Elihu Diaz",
+  "license": "ISC",
+  "devDependencies": {
+    "cross-env": "^5.1.3",
+    "laravel-mix": "^2.0.0",
+    "vue": "^2.5.13"
+  }
+}
