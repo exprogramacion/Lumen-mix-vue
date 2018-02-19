@@ -43,7 +43,7 @@ _**Note** Read the official install https://lumen.laravel.com/docs/5.5._
          .setPublicPath('dist');
     ```
 
-* You'll have then this snippet configuration::
+* You'll have then this snippet configuration:
     ```
       let mix = require('laravel-mix');
 
@@ -80,7 +80,7 @@ _**Note** Read the official install https://github.com/JeffreyWay/laravel-mix/bl
         <script type="text/javascript" src="{{ url('js/app.js') }}"></script>
     </body>
 </html>
-    ```
+```
 * Create assets directory
 
 * Create in assets, 2 directories: js and sass
@@ -99,7 +99,7 @@ const app = new Vue({
     el: '#app'
 });
 
-    ```
+```
 * In components directory will contain:
  -ExampleComponent.vue
 
@@ -118,7 +118,10 @@ const app = new Vue({
         }
     }
 </script>
-    ```
+```
+**6.** Edit package.json:
+* You'll have then this snippet configuration:
+```
 ...
 "scripts": {
     "dev": "NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
@@ -129,10 +132,10 @@ const app = new Vue({
 ...
     ```
 
-**6.** Run development:
+**7.** Run development:
     npm run dev
 _**Note** If you have problems, add "cross-env" before "NODE_ENV..."._
 
-**7.** Test:
+**8.** Test:
     php -S localhost:8000 -t public
 _**Note** I followed these steps to make an example work with laravel-mix and Vue Components. READ the official documentation._
