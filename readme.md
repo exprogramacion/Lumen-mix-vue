@@ -130,7 +130,7 @@ const app = new Vue({
     "production": "NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
   }
 ...
-    ```
+```
 
 **7.** Run development:
     npm run dev
